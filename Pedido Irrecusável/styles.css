@@ -1,0 +1,46 @@
+@keyframes Rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+body {
+    background-color: rgb(184, 134, 142);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+}
+
+.question {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: Rainbow 5s infinite;
+}
+
+.buttons {
+    display: flex;
+    border-radius: 5px:
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#noButton {
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) 
+.question { font-size: 2em }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vamos?</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <div class="question">Dia 10 às 10h?</div>
+    <div class="buttons">
+        <button id="yesButton" onclick="window.location.href='https://www.youtube.com/shorts/H4ClHsVBBFM'">Uepa! Bora!</button>
+        <button id="noButton">Acho que não vai dar não</button>
+    </div>
+
+<script>
+    const noButton = document.getElementById('noButton');
+    const maxDisplacement = 500;
+
+    function moveButton() {
+        const maxX = Math.min(window.innerWidth - this.offsetWidth, this.offsetLeft + maxDisplacement);
+        const maxY = Math.min(window.innerHeight - this.offsetHeight, this.offsetTop + maxDisplacement);
+
+        this.style.transform = `translate(${Math.random() * maxX - this.offsetLeft}px, ${Math.random() * maxY - this.offsetTop}px)`;
+    }
+
+    noButton.addEventListener('mouseenter', moveButton);
+    noButton.addEventListener('click', moveButton);
+</script>
+
+</body>
+</html>
