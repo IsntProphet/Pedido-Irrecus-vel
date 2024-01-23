@@ -25,7 +25,7 @@ body {
 
 .buttons {
     display: flex;
-    border-radius: 5px:
+    border-radius: 5px;
     justify-content: center;
     gap: 20px;
     position: relative;
@@ -42,5 +42,6 @@ button {
     transition: 0.5s;
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px) {
 .question { font-size: 2em }
+}
