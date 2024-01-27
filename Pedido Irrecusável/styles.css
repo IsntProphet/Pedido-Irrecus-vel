@@ -1,26 +1,27 @@
-@keyframes Rainbow {
-    0% { color: red; }
-    20% { color: orange; }
-    40% { color: yellow; }
-    60% { color: green; }
-    80% { color: blue; }
-    100% { color: purple; }
-}
-
 body {
-    background-color: rgb(184, 134, 142);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-     
+    flex-direction: column;    
 }
 
 .question {
-    font-size: 3em;
-    margin-bottom: 20px;
-    animation: Rainbow 5s infinite;
+    font-family: 'Trebuchet MS';
+    color: black;
+    font-size:70px;
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: move 120s linear infinite;
+}
+
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
 }
 
 .buttons {
